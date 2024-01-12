@@ -1,14 +1,17 @@
 body {
+  height: 100vh;
   font-family: 'Nanum Gothic', sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(69, 120, 201), rgb(211, 81, 129));
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HEADER */
 header {
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 header .inner {
-  background-color: orange;
   width: 100%;
   height: 150px;
   position: relative;
@@ -48,7 +51,6 @@ header .inner .search input {
 
 /* MAIN */
 main {
-  background-color: royalblue;
   width: 100%;
   min-height: 100px;
   position: relative;
@@ -56,9 +58,10 @@ main {
   flex-wrap: wrap;
   align-content: flex-start;
   padding-top: 23px;
+  
 }
 main .menu {
-  background-color: #ffffffe6;
+  background-color: #fff;
   width: 100%;
   max-width: 700px;
   height: 60px;
@@ -66,20 +69,92 @@ main .menu {
   border-radius: 5px;
   margin: auto;
   position: relative;
+  justify-content: end;
 }
 main .menu .select-all {
-
+  width: 100%;
+  background-color: #e6e6e6;
+  border-radius: 5px 0px 0px 5px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: 15px;
+}
+main .menu .select-all .empty .material-icons {
+  font-size: 40px;
+  color: #c3c3c3;
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  top: 10px;
+}
+main .menu .select-all .check .material-icons {
+  font-size: 40px;
+  color: royalblue;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  left: 0%;
+  opacity: 0%;
+}
+main .menu .select-all .check:hover .material-icons {
+  opacity: 100%;
 }
 main .menu .all {
-
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(195, 195, 195);
+  font-weight: 700;
 }
 main .menu .work {
-
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(195, 195, 195);
+  font-weight: 700;
 }
 main .menu .final {
-
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(195, 195, 195);
+  font-weight: 700;
 }
-main .menu .delete {
-
+main .menu .delete-final {
+  border-left: 1px solid #ddd;
+  cursor: pointer;
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  color: #ff0000;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 700;
 }
-
+main .menu .all:hover{
+  background-color: rgb(195, 195, 195);
+  color: #fff;
+}
+main .menu .work:hover{
+  background-color: rgb(195, 195, 195);
+  color: #fff;
+}
+main .menu .final:hover{
+  background-color: rgb(195, 195, 195);
+  color: #fff;
+}
+main .menu .delete-final:hover{
+  background-color: #ff0000;
+  color: #fff;
+}
